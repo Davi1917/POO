@@ -1,5 +1,5 @@
 class Produto {
-    constructor(descricao, precoUnitario, fabricante){
+    constructor(descricao, precoUnitario, fabricante) {
         this.descricao = descricao;
         this.precoUnitario = precoUnitario;
         this.fabricante = fabricante;
@@ -7,7 +7,7 @@ class Produto {
 }
 
 class Celular extends Produto {
-    constructor(descricao, precoUnitario, fabricante, armazenamento, ram, processador, tamanhoDaTela){
+    constructor(descricao, precoUnitario, fabricante, armazenamento, ram, processador, tamanhoDaTela) {
         super(descricao, precoUnitario, fabricante)
         this.armazenamento = armazenamento;
         this.ram = ram;
@@ -17,7 +17,7 @@ class Celular extends Produto {
 }
 
 class CaixinhaDeSom extends Produto {
-    constructor(descricao, precoUnitario, fabricante, potencia, dimensoes, temLed){
+    constructor(descricao, precoUnitario, fabricante, potencia, dimensoes, temLed) {
         super(descricao, precoUnitario, fabricante)
         this.potencia = potencia;
         this.dimensoes = dimensoes;
@@ -27,12 +27,27 @@ class CaixinhaDeSom extends Produto {
 }
 
 class Estoque {
-    constructor(listaDeProdutos){
+    constructor(listaDeProdutos) {
         this.listaDeProdutos = []
     }
 
 
-    adicionarProduto(produto){
-        this.listaDeProdutos.push(produto)
+    adicionarProduto(produto) {
+        for (let i = 0; i < this.listaDeProdutos.length; i++)
+
+            //verifique se a entrada Produto é da classe Produto
+            if (produto instanceof Produto) {
+                this.listaDeProdutos.push(produto)
+                console.log('O produto foi adicionado com sucesso')
+            }
+
+            else {
+                console.error(`A entrada não é da classe Produto`)
+            }
     }
 }
+
+
+
+
+
