@@ -7,15 +7,30 @@ class Bala {
 
 
 class Player {
-    constructor(nome, qntdLados, raio, cor, velocidadeMaxDoTiro, ataque, bala) {
+    constructor(nome, qtdLados, raio, cor, velocidadeMaxDoTiro, ataque) {
         this.nome = nome
-        this.qntdLados = qntdLados
+        this.qtdLados = qtdLados
         this.raio = raio
         this.cor = cor
         this.velocidadeMaxDoTiro = velocidadeMaxDoTiro
-        this.ataque = ataque
         this.vida = 100
-        this.bala = bala
+        this.ataque = ataque
+        this.bala = new Bala(ataque, cor)
     }
 }
 
+class GerenciadorDeDuelo {
+    constructor(player1, player2) {
+        this.player1 = player1
+        this.player2 = player2
+    }
+
+
+
+    getLadoPlayer1() {
+        return "esquerda"
+    }
+    getLadoPlayer2() {
+        return "direita"
+    }
+}
