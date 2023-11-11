@@ -13,6 +13,7 @@
     height: 200px;
     /* Altura */
 
+
 }
 
 .card>.avatar {
@@ -34,13 +35,121 @@
     padding: 16px;
     /*Distância da borda do contéudo externo (sem mais nenhuma padronização, afasta de todos os 4 lados) */
 
+
+}
+
+
+.card>.conteudo>.titulo {
+    margin: 0;
+
+}
+
+.card>.conteudo>.descricao {
+    margin: 0;
+    margin-top: 4px;
+    height: 100%;
+
+
+
+    height: 120px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .card>.barra-botoes {
-    width: 100px;
+    display: flex;
+    flex-direction: column;
     border: dashed 1px #0000ff;
-    gap: 16px;
-    /*Distância entre os elementos filhos */
-    padding: 16px;
-    /*Distância da borda do contéudo externo (sem mais nenhuma padronização, afasta de todos os 4 lados) */
+
+
+
+    /* gap: 16px; 
+    Distância entre os elementos filhos */
+    /*padding: 16px;
+    Distância da borda do contéudo externo (sem mais nenhuma padronização, afasta de todos os 4 lados) */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card-expandido {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    background-color: rgb(170, 170, 170)
+}
+
+.card-expandido>.avatar {
+    height: 160px;
+    width: 180px;
+
+    max-width: 160px;
+    max-height: 180px;
+
+    object-fit: cover;
+}
+
+.card-expandido>.conteudo {
+    display: flex;
+    flex-direction: column;
+
+    padding: 8px 20px;
+    border: dashed 1px #000000;
+
+
+}
+
+.card-expandido>.barra-botoes {
+
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding: 8px 30px;
+
+}
+
+.card-expandido>.barra-botoes>button {
+    width: 100%;
+}
+
+.card-expandido>.conteudo>.titulo {
+    margin: 0;
 }
