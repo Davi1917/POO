@@ -40,4 +40,3 @@ let remedio5 = new Remedio(
 );
 let listaDeRemedios = [];
 listaDeRemedios.push(remedio1, remedio2, remedio3, remedio4, remedio5)
-
