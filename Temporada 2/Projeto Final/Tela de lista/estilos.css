@@ -1,14 +1,13 @@
 .container-cards {
     display: flex;
     flex-direction: column;
-    border: dashed 1px #0000ff;
+
 
 }
 
 .card {
     display: flex;
     flex-direction: row;
-    border: dashed 1px #ffffff;
 
     height: 200px;
     /* Altura */
@@ -19,7 +18,7 @@
 .card>.avatar {
     width: 100px;
     object-fit: cover;
-    border: dashed 1px #0000ff;
+
     gap: 16px;
     /*Distância entre os elementos filhos */
     padding: 16px;
@@ -29,7 +28,6 @@
 }
 
 .card>.conteudo {
-    border: dashed 1px #0000ff;
     gap: 16px;
     /*Distância entre os elementos filhos */
     padding: 16px;
@@ -60,7 +58,7 @@
 .card>.barra-botoes {
     display: flex;
     flex-direction: column;
-    border: dashed 1px #0000ff;
+ 
 
 
 
@@ -132,7 +130,7 @@
     flex-direction: column;
 
     padding: 8px 20px;
-    border: dashed 1px #000000;
+
 
 
 }
